@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 [RequireComponent(typeof(SquareSelectorCreator))]
+[RequireComponent(typeof(IObjectTweener))]
 public abstract class Board : MonoBehaviour
 {
     public const int BOARD_SIZE = 8;
@@ -16,6 +17,7 @@ public abstract class Board : MonoBehaviour
     private Piece selectedPiece;
     private ChessGameController chessController;
     private SquareSelectorCreator squareSelector;
+    private IObjectTweener tweener;
 
     protected virtual void Awake()
     {
@@ -47,6 +49,8 @@ public abstract class Board : MonoBehaviour
 
     internal void OnSelectedPieceMoved(Vector2Int intCoords)
     {
+        
+        Animate(selectedPiece, intCoords, GetPieceOnSquare(intCoords));
         TryToTakeOppositePiece(intCoords);
         UpdateBoardOnPieceMove(intCoords, selectedPiece.occupiedSquare, selectedPiece, null);
         selectedPiece.MovePiece(intCoords);
@@ -54,7 +58,7 @@ public abstract class Board : MonoBehaviour
         EndTurn();
     }
 
-    private Vector2Int CalculateCoordsFromPosition(Vector3 inputPosition)
+    public Vector2Int CalculateCoordsFromPosition(Vector3 inputPosition)
     {
         int x = Mathf.FloorToInt(transform.InverseTransformPoint(inputPosition).x / squareSize) + BOARD_SIZE / 2;
         int y = Mathf.FloorToInt(transform.InverseTransformPoint(inputPosition).z / squareSize) + BOARD_SIZE / 2;
@@ -176,28 +180,46 @@ public abstract class Board : MonoBehaviour
         }
     }
 
+    public void IsAttacking(Vector2Int coords, Piece p)
+    {
+        Piece piece = GetPieceOnSquare(coords);
+        if (piece && !selectedPiece.IsFromSameTeam(piece))
+        {
+
+            p.isat = true;
+        }
+    }
+
     private async void TakePiece(Piece piece)
     {
         if (piece)
         {
-            //Debug.Log("Ded");
-            piece.ded = true;
-
-
-            while (piece.ded == true)
-            {
-                await Task.Yield();
-            }
-
-
 
             grid[piece.occupiedSquare.x, piece.occupiedSquare.y] = null;
             chessController.OnPieceRemoved(piece);
 
 
-            
+
+           
+            //piece.ded = true;
+
+
+            while (piece.ded2 == true)
+            {
+                await Task.Yield();
+            }
+
             Destroy(piece.gameObject);
+
+
         }
+    }
+
+    private void Animate(Piece piece, Vector2Int coords,  Piece att)
+    {
+        IsAttacking(coords, piece);
+        piece.Animation(coords, att);
+        
     }
 
 

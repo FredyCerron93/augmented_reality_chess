@@ -39,6 +39,23 @@ public class BetaAnimationScript : MonoBehaviour
             StartCoroutine(DelayedDead(anim.GetCurrentAnimatorStateInfo(0).length));
         }
 
+        if (piece.at == true)
+        {
+            anim.Play("Attack");
+
+
+            StartCoroutine(DelayedAttack(anim.GetCurrentAnimatorStateInfo(0).length));
+        }
+
+
+
+        IEnumerator DelayedAttack(float _delay = 0)
+        {
+            yield return new WaitForSeconds(_delay);
+            piece.at = false;
+        }
+
+
 
 
         IEnumerator DelayedDead(float _delay = 0)
@@ -61,12 +78,21 @@ public class BetaAnimationScript : MonoBehaviour
 
             anim.SetBool("isWalking", true);
             anim.SetBool("isIdle", false);
+            anim.SetBool("isAttacking", false);
         }
        
-        else
+        else if (piece.at == true)
+        {
+            anim.SetBool("isWalking", false);
+            anim.SetBool("isIdle", false);
+            anim.SetBool("isAttacking", true);
+
+        }
+        else 
         {
             anim.SetBool("isWalking", false);
             anim.SetBool("isIdle", true);
+            anim.SetBool("isAttacking", false);
 
         }
 

@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ArcTweener
+    - BetaAnimationScript
     - Bishop
     - BoardInputHandler
     - BoardLayout
@@ -46,6 +47,12 @@ ScriptsOnlyBuild:
     - Photon.Pun.ServerSettings
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -113,105 +120,107 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1456}
     - Class: 114
-      Script: {instanceID: 1548}
+      Script: {instanceID: 1554}
     - Class: 114
-      Script: {instanceID: 1562}
+      Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 1582}
+      Script: {instanceID: 1592}
     - Class: 114
-      Script: {instanceID: 1676}
+      Script: {instanceID: 1694}
     - Class: 114
-      Script: {instanceID: 1702}
+      Script: {instanceID: 1722}
     - Class: 114
-      Script: {instanceID: 1706}
+      Script: {instanceID: 1726}
     - Class: 114
-      Script: {instanceID: 1814}
+      Script: {instanceID: 1842}
     - Class: 114
-      Script: {instanceID: 1816}
+      Script: {instanceID: 1844}
     - Class: 114
-      Script: {instanceID: 2158}
+      Script: {instanceID: 2208}
     - Class: 114
-      Script: {instanceID: 2162}
+      Script: {instanceID: 2214}
     - Class: 114
-      Script: {instanceID: 2204}
+      Script: {instanceID: 2256}
     - Class: 114
-      Script: {instanceID: 2212}
+      Script: {instanceID: 2264}
     - Class: 114
-      Script: {instanceID: 2382}
-    - Class: 114
-      Script: {instanceID: 2404}
-    - Class: 114
-      Script: {instanceID: 2408}
+      Script: {instanceID: 2448}
     - Class: 114
       Script: {instanceID: 2468}
     - Class: 114
-      Script: {instanceID: 2518}
+      Script: {instanceID: 2472}
     - Class: 114
-      Script: {instanceID: 2612}
+      Script: {instanceID: 2536}
     - Class: 114
-      Script: {instanceID: 2622}
+      Script: {instanceID: 2594}
     - Class: 114
-      Script: {instanceID: 2638}
+      Script: {instanceID: 2698}
     - Class: 114
-      Script: {instanceID: 2646}
+      Script: {instanceID: 2714}
     - Class: 114
-      Script: {instanceID: 2690}
+      Script: {instanceID: 2730}
     - Class: 114
-      Script: {instanceID: 2892}
+      Script: {instanceID: 2740}
     - Class: 114
-      Script: {instanceID: 2900}
+      Script: {instanceID: 2786}
     - Class: 114
-      Script: {instanceID: 2902}
+      Script: {instanceID: 2944}
     - Class: 114
-      Script: {instanceID: 2904}
+      Script: {instanceID: 2994}
     - Class: 114
-      Script: {instanceID: 3314}
+      Script: {instanceID: 3002}
     - Class: 114
-      Script: {instanceID: 3338}
+      Script: {instanceID: 3004}
     - Class: 114
-      Script: {instanceID: 3362}
+      Script: {instanceID: 3008}
     - Class: 114
-      Script: {instanceID: 3418}
+      Script: {instanceID: 3442}
     - Class: 114
-      Script: {instanceID: 3426}
+      Script: {instanceID: 3470}
     - Class: 114
-      Script: {instanceID: 3600}
+      Script: {instanceID: 3496}
     - Class: 114
-      Script: {instanceID: 3718}
+      Script: {instanceID: 3562}
     - Class: 114
-      Script: {instanceID: 3722}
+      Script: {instanceID: 3570}
     - Class: 114
-      Script: {instanceID: 3770}
+      Script: {instanceID: 3750}
     - Class: 114
-      Script: {instanceID: 3788}
+      Script: {instanceID: 3880}
     - Class: 114
-      Script: {instanceID: 3892}
-    - Class: 114
-      Script: {instanceID: 3908}
-    - Class: 114
-      Script: {instanceID: 3932}
-    - Class: 114
-      Script: {instanceID: 3934}
+      Script: {instanceID: 3884}
     - Class: 114
       Script: {instanceID: 3936}
     - Class: 114
-      Script: {instanceID: 4062}
+      Script: {instanceID: 3956}
     - Class: 114
-      Script: {instanceID: 4202}
+      Script: {instanceID: 4064}
     - Class: 114
-      Script: {instanceID: 4316}
+      Script: {instanceID: 4082}
     - Class: 114
-      Script: {instanceID: 4324}
+      Script: {instanceID: 4110}
     - Class: 114
-      Script: {instanceID: 4458}
+      Script: {instanceID: 4112}
     - Class: 114
-      Script: {instanceID: 4464}
+      Script: {instanceID: 4114}
     - Class: 114
-      Script: {instanceID: 4476}
+      Script: {instanceID: 4244}
     - Class: 114
-      Script: {instanceID: 4630}
+      Script: {instanceID: 4388}
     - Class: 114
-      Script: {instanceID: 4764}
+      Script: {instanceID: 4518}
+    - Class: 114
+      Script: {instanceID: 4526}
+    - Class: 114
+      Script: {instanceID: 4664}
+    - Class: 114
+      Script: {instanceID: 4670}
+    - Class: 114
+      Script: {instanceID: 4682}
+    - Class: 114
+      Script: {instanceID: 4842}
+    - Class: 114
+      Script: {instanceID: 4978}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -737,7 +746,7 @@ ScriptsOnlyBuild:
     className: PhotonRigidbody2DView
   - hash:
       serializedVersion: 2
-      Hash: bf0c8a638e7579daef70da1a47b35992
+      Hash: a0dab19d92c5f4a46676e30ac7b466b4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Pawn
@@ -761,7 +770,7 @@ ScriptsOnlyBuild:
     className: OnEscapeQuit
   - hash:
       serializedVersion: 2
-      Hash: bf0c8a638e7579daef70da1a47b35992
+      Hash: a0dab19d92c5f4a46676e30ac7b466b4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: King
@@ -831,6 +840,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.SlotRacer.Utils
     className: SplinePosition
+  - hash:
+      serializedVersion: 2
+      Hash: 05eef21338cef98c028f7516b579ffb8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BetaAnimationScript
   - hash:
       serializedVersion: 2
       Hash: 57d2b3ca58a430f7cf319bb757c1f0f5
@@ -1061,7 +1076,7 @@ ScriptsOnlyBuild:
     className: ChessUIManager
   - hash:
       serializedVersion: 2
-      Hash: bf0c8a638e7579daef70da1a47b35992
+      Hash: a0dab19d92c5f4a46676e30ac7b466b4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Rook
@@ -1265,7 +1280,7 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: bf0c8a638e7579daef70da1a47b35992
+      Hash: a0dab19d92c5f4a46676e30ac7b466b4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Queen
@@ -1469,7 +1484,7 @@ ScriptsOnlyBuild:
     className: DocLinkButton
   - hash:
       serializedVersion: 2
-      Hash: bf0c8a638e7579daef70da1a47b35992
+      Hash: a0dab19d92c5f4a46676e30ac7b466b4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Bishop
@@ -1571,7 +1586,7 @@ ScriptsOnlyBuild:
     className: FriendListCell
   - hash:
       serializedVersion: 2
-      Hash: bf0c8a638e7579daef70da1a47b35992
+      Hash: a0dab19d92c5f4a46676e30ac7b466b4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Knight
@@ -1589,7 +1604,7 @@ ScriptsOnlyBuild:
     className: StringInputField
   - hash:
       serializedVersion: 2
-      Hash: 61a91ec406b3afe4aa4c8419e9ac7632
+      Hash: d5f0a6faa69caae6f245cc1f90ce95cc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MultiplayerChessGameController
@@ -1637,7 +1652,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 61a91ec406b3afe4aa4c8419e9ac7632
+      Hash: d5f0a6faa69caae6f245cc1f90ce95cc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SingleplayerChessGameController
@@ -1716,4 +1731,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/Main.unity
-  playerPath: C:/Users/MSI/ChessGame/ChessGame.exe
+  playerPath: C:/Users/MSI/Documents/ChessGame.exe

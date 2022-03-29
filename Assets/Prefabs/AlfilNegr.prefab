@@ -1715,6 +1715,7 @@ GameObject:
   - component: {fileID: 5285099433734185894}
   - component: {fileID: 8482158143125551469}
   - component: {fileID: 248453031200880748}
+  - component: {fileID: 7046411850843619643}
   m_Layer: 0
   m_Name: AlfilNegr
   m_TagString: Untagged
@@ -1858,6 +1859,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piece: {fileID: 5285099433734185894}
+--- !u!65 &7046411850843619643
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6632225166844873187}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3063889, y: 3.2592335, z: 1.4152794}
+  m_Center: {x: -0.004497528, y: 1.5023031, z: 0.11180496}
 --- !u!1 &6969918417377948708
 GameObject:
   m_ObjectHideFlags: 0

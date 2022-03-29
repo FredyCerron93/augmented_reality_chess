@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2762688463862882280}
   - component: {fileID: 2762688463862882281}
   - component: {fileID: 8840568462861805487}
+  - component: {fileID: -2614715864981680393}
   m_Layer: 0
   m_Name: MultiplayerGameMaster
   m_TagString: Untagged
@@ -45,12 +46,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecesPrefabs:
-  - {fileID: 190264, guid: 77d8c4326013f474fb81cefd7d730bc2, type: 3}
-  - {fileID: 119820, guid: ec069372feb7aea488e1c53722fc4f81, type: 3}
-  - {fileID: 107724, guid: db63d40d9b0acfd4bbaad39b74df5a77, type: 3}
-  - {fileID: 104878, guid: 20d450fe70881f04da520029d7fd8398, type: 3}
-  - {fileID: 103078, guid: ca97a9dbf9802b84c8ee83dcf6888991, type: 3}
-  - {fileID: 114028, guid: 3f0c098916b15814a9be94801d142148, type: 3}
+  - {fileID: 3957489781821898710, guid: a507662c0ec86414aabef50e5920ce16, type: 3}
+  - {fileID: 242225499954460263, guid: 0c24c6656c71f9e4b9a49c972cb5511a, type: 3}
+  - {fileID: 6486025565219205487, guid: 1c057591e3773aa4bb0a15ca6d1ec563, type: 3}
+  - {fileID: 7547177737700871314, guid: e5e821101e974b549a3750389534d68d, type: 3}
+  - {fileID: 9183353970384038370, guid: 96d2d90ecb82db045aaa9b801a9abffc, type: 3}
+  - {fileID: 8227214718423408929, guid: 14f027330c064704aaae2522061b039c, type: 3}
   blackMaterial: {fileID: 2100000, guid: 3f651adf39219704f97ab7a257713fe9, type: 2}
   whiteMaterial: {fileID: 2100000, guid: 9db687a8936d31043b19d2b8d069499a, type: 2}
 --- !u!114 &8840568462861805487
@@ -65,4 +66,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1feeba0f3953a82419497810ae032986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingBoardLayout: {fileID: 11400000, guid: f88102b0f1476654899acf9f5df98049, type: 2}
+  startingBoardLayout: {fileID: 11400000, guid: ab3db48d3af93134ea792f0d18590bb6, type: 2}
+  startingBoardLayout2: {fileID: 11400000, guid: bfb4411d543162d48a9de00f3ac50b4c, type: 2}
+  pieceCreator: {fileID: 2762688463862882281}
+  pieceCreator2: {fileID: -2614715864981680393}
+--- !u!114 &-2614715864981680393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2762688463862882286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fea0c20ce71714439623f3ad90ccf31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  piecesPrefabs:
+  - {fileID: 6632225166844873187, guid: 573c54e38026b164f8871625a4bdda74, type: 3}
+  - {fileID: 1916895118599180982, guid: a8d2f458cd5ad3a419f81a25eb21f7d2, type: 3}
+  - {fileID: 8117590929494683294, guid: 12e6c5f7f833f2b40a67f6499965f3ac, type: 3}
+  - {fileID: 2428557311404284594, guid: ebb0b19be3844604f949db7dff136597, type: 3}
+  - {fileID: 963354132063536919, guid: ca318d302747c1f49861f1269e44c5bc, type: 3}
+  - {fileID: 4981242049730647619, guid: da43c8ab0aa769f4db7709c3dda6b1ad, type: 3}
+  blackMaterial: {fileID: 0}
+  whiteMaterial: {fileID: 0}

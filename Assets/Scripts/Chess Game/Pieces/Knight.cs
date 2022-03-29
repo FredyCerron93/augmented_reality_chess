@@ -16,6 +16,13 @@ public class Knight : Piece
 		new Vector2Int(-1, -2),
 	};
 
+	public Knight()
+	{
+		this.ish = true;
+	}
+
+	
+
 	public override List<Vector2Int> SelectAvaliableSquares()
 	{
 		avaliableMoves.Clear();
@@ -31,4 +38,6 @@ public class Knight : Piece
 		}
 		return avaliableMoves;
 	}
+
+	
 }
